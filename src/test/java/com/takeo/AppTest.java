@@ -15,7 +15,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("From Test case");
+	System.out.println("From the TEst case..................");
         assertTrue( true );
     }
 }

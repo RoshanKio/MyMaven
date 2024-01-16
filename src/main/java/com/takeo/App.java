@@ -7,7 +7,8 @@ public class App
 {
     public static void main( String[] args )
     {
-	System.out.println("Date = "+new Date(124, 0, 16));
-        System.out.println( "Random number n = "+new Random().nextDouble());
+        System.out.println( "Today is "+new Date(124, 0, 16));
+	System.out.println("path = "+System.getenv("path"));
+	System.out.println(new Random().nextDouble()+" is a random number.");
     }
 }
