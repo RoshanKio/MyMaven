@@ -1,3 +1,2 @@
-cd target/classes
-java com.takeo.App
+java -cp target/classes com.takeo.App
 pause
