@@ -1,5 +1,7 @@
 package com.takeo;
 
+import java.sql.Date;
+
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -15,7 +17,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("Testing out APplication................................................");
+	System.out.println("Testing on "+new Date(124, 0, 17)+" ...........");
         assertTrue( true );
     }
 }
