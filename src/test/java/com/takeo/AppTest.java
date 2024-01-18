@@ -2,9 +2,9 @@ package com.takeo;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+import java.time.LocalDate;
 
-import java.sql.Date;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
@@ -17,7 +17,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("Testing on "+new Date(124, 0, 17)+" ..................");
+	System.out.println("Test on "+LocalDate.now());
         assertTrue( true );
     }
 }
