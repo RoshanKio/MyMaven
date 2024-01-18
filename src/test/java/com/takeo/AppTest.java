@@ -2,9 +2,9 @@ package com.takeo;
 
 import static org.junit.Assert.assertTrue;
 
-import java.time.LocalDate;
-
 import org.junit.Test;
+
+import java.time.LocalDate;
 
 /**
  * Unit test for simple App.
@@ -17,7 +17,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("Test on "+LocalDate.now());
+	System.out.println("Testing on the day of "+LocalDate.now());
         assertTrue( true );
     }
 }
