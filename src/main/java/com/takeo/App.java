@@ -1,38 +1,34 @@
 package com.takeo;
 
+import java.util.Arrays;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.io.FileReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        int []array = {1, 8, 4, 6, 5, 21, 3, 4 ,21, 23};
 
-public class App {
-    static public void main(String ... tts) {
-        System.out.println("Date of creation : "+new Date(124, 0, 20));
-        System.out.println("Today is "+LocalDate.now());
-        System.out.println("PATH : "+System.getenv("PATH"));
-        FileReader fileReader = null;
-        Properties p = new Properties();
-
-        try {
-            fileReader = new FileReader("properties.txt");
-        }
-        catch(FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            p.load(fileReader);
-        }
-        catch(IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println("name : "+p.getProperty("name"));
-        System.out.println("address : "+p.getProperty("address"));
-
-
+        System.out.println( "Array befoere sorting : "+Arrays.toString(array) );
+        bubbleSort(array);
+        System.out.println("Array Afyter sorting : "+Arrays.toString(array));
     }
 
+    static public void bubbleSort(int[] arr) {
+        int n = arr.length;
+
+        for(int i = 0; i < n-1; i++) {
+            for(int j = 0; j < n-i-1; j++) {
+                //swap arr[j] and arr[j+1]
+                if(arr[j]>arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
 }

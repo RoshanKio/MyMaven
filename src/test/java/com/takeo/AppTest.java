@@ -1,7 +1,8 @@
 package com.takeo;
 
-import static org.junit.Assert.assertTrue;
 import java.time.LocalDate;
+
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
