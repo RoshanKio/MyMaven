@@ -12,9 +12,9 @@ public class App
     {
         int []array = {1, 8, 4, 6, 5, 21, 3, 4 ,21, 23};
 
-        System.out.println( "Array befoere sorting : "+Arrays.toString(array) );
+        System.out.println( "Array before sorting : "+Arrays.toString(array) );
         bubbleSort(array);
-        System.out.println("Array Afyter sorting : "+Arrays.toString(array));
+        System.out.println("Array After sorting : "+Arrays.toString(array));
     }
 
     static public void bubbleSort(int[] arr) {
