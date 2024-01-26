@@ -1,9 +1,11 @@
 package com.takeo;
 
 import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
 import java.sql.Date;
 import java.time.LocalDate;
-import org.junit.Test;
 
 /**
  * Unit test for simple App.
@@ -16,9 +18,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("Test created on "+new Date(124, 0, 24));
-	System.out.println("Testing on "+LocalDate.now());
-	System.out.println("path = "+System.getenv("path"));
+	System.out.println("Date of creation of the AppTest class : "+new Date(124, 0, 26)+"\n===============================================\nDate of modification of AppTest class : "+LocalDate.now()+"\n====================================================\n\n\n\n");
         assertTrue( true );
     }
 }
