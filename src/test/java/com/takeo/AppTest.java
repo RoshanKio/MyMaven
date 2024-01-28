@@ -5,6 +5,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import java.sql.Date;
+
 import java.time.LocalDate;
 
 /**
@@ -12,13 +13,14 @@ import java.time.LocalDate;
  */
 public class AppTest 
 {
+	
     /**
      * Rigorous Test :-)
      */
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("Date of creation of the AppTest class : "+new Date(124, 0, 26)+"\n===============================================\nDate of modification of AppTest class : "+LocalDate.now()+"\n====================================================\n\n\n\n");
+	System.out.println("Test Creation Date : "+new Date(124, 0, 27)+", Test Modified Date : "+LocalDate.now());
         assertTrue( true );
     }
 }
