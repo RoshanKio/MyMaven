@@ -1,0 +1,19 @@
+{
+  "name": "mynode",
+  "version": "1.0.0",
+  "description": "Demo Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "npm",
+    "express"
+  ],
+  "author": "Roshan Katuwal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2"
+  }
+}

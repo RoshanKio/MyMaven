@@ -3,7 +3,6 @@ package com.takeo;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-
 import java.sql.Date;
 import java.time.LocalDate;
 
@@ -18,7 +17,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-	System.out.println("Test Creation Date : "+new Date(124, 0, 29)+"\n===============\nTest Modificationj Date : "+LocalDate.now()+"\n===================\n\n\n\n");
+	System.out.println("AppTest Class Creation Date : "+new Date(124, 0, 29)+"\n=============================\nAppTest class Modification date : "+LocalDate.now()+"\n=========================\n\n\n\n\n");
         assertTrue( true );
     }
 }
